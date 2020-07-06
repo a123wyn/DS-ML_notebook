@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="http://127.0.0.1:8000/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="4ab010e5b48648b4be5da703eb558f75" class="chart-container" style="width:1280px; height:720px;"></div>
+    <script>
+        var chart_4ab010e5b48648b4be5da703eb558f75 = echarts.init(
+            document.getElementById('4ab010e5b48648b4be5da703eb558f75'), 'white', {renderer: 'canvas'});
+        var option_4ab010e5b48648b4be5da703eb558f75 = {
+    "backgroundColor": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{offset: 0, color: '#5c5959'}, {offset: 1, color: '#909090'}], false),
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "radar",
+            "name": "Train",
+            "data": [
+                [
+                    0.012465604534698145,
+                    0.4238450229167938,
+                    0.911217212677002,
+                    0.9708335995674133,
+                    0.9614598751068115,
+                    0.7113050818443298,
+                    0.4634101092815399,
+                    0.5824576616287231,
+                    0.7871562242507935,
+                    0.6176912188529968,
+                    0.9614598751068115,
+                    0.9338843822479248,
+                    0.954886794090271,
+                    0.7158989310264587,
+                    0.8859347105026245,
+                    0.8267530202865601,
+                    0.8553213477134705,
+                    0.03371209285339239
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "color": "#00FFFF",
+                "margin": 8
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0,
+                "type": "solid",
+                "color": "#00FFFF"
+            },
+            "areaStyle": {
+                "opacity": 0.3,
+                "color": "#00FFFF"
+            }
+        },
+        {
+            "type": "radar",
+            "name": "Validation",
+            "data": [
+                [
+                    0.026074074074074072,
+                    0.36555954813957214,
+                    0.7763286232948303,
+                    0.8639452457427979,
+                    0.828000009059906,
+                    0.6003333926200867,
+                    0.4066000282764435,
+                    0.5021880865097046,
+                    0.6676048040390015,
+                    0.5452522039413452,
+                    0.828000009059906,
+                    0.7938783168792725,
+                    0.831274151802063,
+                    0.5713874101638794,
+                    0.702118992805481,
+                    0.7179166674613953,
+                    0.7099300026893616,
+                    0.08526646811515093
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "color": "#00FF00",
+                "margin": 8
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0,
+                "type": "solid",
+                "color": "#00FF00"
+            },
+            "areaStyle": {
+                "opacity": 0.3,
+                "color": "#00FF00"
+            }
+        },
+        {
+            "type": "radar",
+            "name": "Best_Validation",
+            "data": [
+                [
+                    0.02412962962962963,
+                    0.3765595257282257,
+                    0.7868452072143555,
+                    0.8736214637756348,
+                    0.8529999852180481,
+                    0.6086666584014893,
+                    0.41120001673698425,
+                    0.5173547863960266,
+                    0.6767643690109253,
+                    0.5514086484909058,
+                    0.8529999852180481,
+                    0.807257890701294,
+                    0.8446044921875,
+                    0.5652208924293518,
+                    0.7369330525398254,
+                    0.7108333110809326,
+                    0.723647952079773,
+                    0.06960263708606362
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "color": "#00008B",
+                "margin": 8
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0,
+                "type": "solid",
+                "color": "#00008B"
+            },
+            "areaStyle": {
+                "opacity": 0.2,
+                "color": "#00008B"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Train",
+                "Validation",
+                "Best_Validation"
+            ],
+            "selected": {
+                "Train": true,
+                "Validation": true,
+                "Best_Validation": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "inactiveColor": "#c1c1be",
+            "textStyle": {
+                "color": "#FFFFFF"
+            }
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "1-10\u00d7HL",
+                "max": 1
+            },
+            {
+                "name": "R@1",
+                "max": 1
+            },
+            {
+                "name": "R@3",
+                "max": 1
+            },
+            {
+                "name": "R@5",
+                "max": 1
+            },
+            {
+                "name": "P@1",
+                "max": 1
+            },
+            {
+                "name": "P@3",
+                "max": 1
+            },
+            {
+                "name": "P@5",
+                "max": 1
+            },
+            {
+                "name": "F1@1",
+                "max": 1
+            },
+            {
+                "name": "F1@3",
+                "max": 1
+            },
+            {
+                "name": "F1@5",
+                "max": 1
+            },
+            {
+                "name": "nDCG@1",
+                "max": 1
+            },
+            {
+                "name": "nDCG@3",
+                "max": 1
+            },
+            {
+                "name": "nDCG@5",
+                "max": 1
+            },
+            {
+                "name": "MaF1",
+                "max": 1
+            },
+            {
+                "name": "MiP",
+                "max": 1
+            },
+            {
+                "name": "MiR",
+                "max": 1
+            },
+            {
+                "name": "MiF1",
+                "max": 1
+            },
+            {
+                "name": "loss",
+                "max": 1
+            }
+        ],
+        "name": {
+            "textStyle": {
+                "color": "#FFFFFF"
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "CNN4 Metrics Epoch 15",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#e3dfde"
+            }
+        }
+    ]
+};
+        chart_4ab010e5b48648b4be5da703eb558f75.setOption(option_4ab010e5b48648b4be5da703eb558f75);
+    </script>
+</body>
+</html>

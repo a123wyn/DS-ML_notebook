@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="http://127.0.0.1:8000/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="df53301c75d84ea284e06a44fbb8958c" class="chart-container" style="width:1280px; height:720px;"></div>
+    <script>
+        var chart_df53301c75d84ea284e06a44fbb8958c = echarts.init(
+            document.getElementById('df53301c75d84ea284e06a44fbb8958c'), 'white', {renderer: 'canvas'});
+        var option_df53301c75d84ea284e06a44fbb8958c = {
+    "backgroundColor": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{offset: 0, color: '#5c5959'}, {offset: 1, color: '#909090'}], false),
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "radar",
+            "name": "cnn4",
+            "data": [
+                [
+                    0.3594595193862915,
+                    0.7721285223960876,
+                    0.8691953420639038,
+                    0.8220000267028809,
+                    0.6000000834465027,
+                    0.412600040435791,
+                    0.4949024021625519,
+                    0.6652523875236511,
+                    0.5510892271995544,
+                    0.8220000267028809,
+                    0.7892555594444275,
+                    0.8305892944335938,
+                    0.07389863952994347
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "color": "#00008B",
+                "margin": 8
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0,
+                "type": "solid",
+                "color": "#00008B"
+            },
+            "areaStyle": {
+                "opacity": 0.3,
+                "color": "#00008B"
+            }
+        },
+        {
+            "type": "radar",
+            "name": "lsan4",
+            "data": [
+                [
+                    0.36804288625717163,
+                    0.7732619047164917,
+                    0.8733785152435303,
+                    0.8410000205039978,
+                    0.6016667485237122,
+                    0.41339999437332153,
+                    0.5066357254981995,
+                    0.6666587591171265,
+                    0.5528446435928345,
+                    0.8410000205039978,
+                    0.7964913845062256,
+                    0.8383657932281494,
+                    0.06898867338895798
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "color": "#00FF00",
+                "margin": 8
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 0.5,
+                "curveness": 0,
+                "type": "solid",
+                "color": "#00FF00"
+            },
+            "areaStyle": {
+                "opacity": 0.3,
+                "color": "#00FF00"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "cnn4",
+                "lsan4"
+            ],
+            "selected": {
+                "cnn4": true,
+                "lsan4": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "inactiveColor": "#c1c1be",
+            "textStyle": {
+                "color": "#FFFFFF"
+            }
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "R@1",
+                "max": 1
+            },
+            {
+                "name": "R@3",
+                "max": 1
+            },
+            {
+                "name": "R@5",
+                "max": 1
+            },
+            {
+                "name": "P@1",
+                "max": 1
+            },
+            {
+                "name": "P@3",
+                "max": 1
+            },
+            {
+                "name": "P@5",
+                "max": 1
+            },
+            {
+                "name": "F1@1",
+                "max": 1
+            },
+            {
+                "name": "F1@3",
+                "max": 1
+            },
+            {
+                "name": "F1@5",
+                "max": 1
+            },
+            {
+                "name": "nDCG@1",
+                "max": 1
+            },
+            {
+                "name": "nDCG@3",
+                "max": 1
+            },
+            {
+                "name": "nDCG@5",
+                "max": 1
+            },
+            {
+                "name": "loss",
+                "max": 1
+            }
+        ],
+        "name": {
+            "textStyle": {
+                "color": "#FFFFFF"
+            }
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "Comparison between cnn4 and lsan4",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#e3dfde"
+            }
+        }
+    ]
+};
+        chart_df53301c75d84ea284e06a44fbb8958c.setOption(option_df53301c75d84ea284e06a44fbb8958c);
+    </script>
+</body>
+</html>
